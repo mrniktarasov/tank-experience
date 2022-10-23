@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1e;
+  background-image: url('../public/main.png');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.tanks {
+  margin-top: 291px;
+  margin-bottom: 200px;
+  max-width: 710px;
+}

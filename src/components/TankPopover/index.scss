@@ -1,0 +1,203 @@
+@import 'node_modules/include-media/dist/_include-media.scss';
+
+$breakpoints: (
+  smphone: 450px,
+  phone: 650px, 
+  tablet: 1000px,
+);
+
+%header-shared {
+    opacity: 1;
+    color: #a29b71;
+    font-size: 21px;
+    font-family: "Arial";
+    color: rgb(162, 155, 112);
+    font-weight: bold;
+    line-height: 1.2;;      
+}
+
+.tankPopover {
+    &_container {
+        width: 100%;
+        min-height: 273px;
+        opacity: .9;
+        gap: 25px 5px;
+
+        display: grid;
+        grid-template-areas: 
+        'complectation'
+        'experience'
+        'fights'
+        'fightsInput';
+        align-items: end;
+
+        @include media('>smphone') {
+            max-width: 500px;
+            gap: 25px 35px;
+            grid-template-areas: 
+            'complectation complectation'
+            'fights fightsInput'
+            'experience experience';
+        }
+
+        @include media('>phone') {
+            max-width: 500px;
+            gap: 25px 35px;
+            grid-template-areas: 
+            'complectation experience'
+            'fights fightsInput';
+        }
+    }
+
+    &_complectation {
+        opacity: 1;
+        grid-area: complectation;
+        align-self: flex-start;
+
+    }
+
+    &_complectationData {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include media('>phone') {
+            flex-direction: column;
+        }
+    }
+
+    &_experience {
+        opacity: 1;
+        grid-area: experience;
+        align-self: flex-start;
+    }
+
+    &_fights {
+        opacity: 1;
+        grid-area: fights;
+    }
+
+    &_score {
+        font-size: 41.667px;
+        font-family: "Arial";
+        color: rgb(249, 169, 54);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: right;      
+    }
+
+    &_text {
+        width: 100%;
+        font-size: 12.5px;
+        font-family: "Arial";
+        color: rgb(198, 198, 198);
+        line-height: 1.2;
+        padding-left: 0 !important;
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+
+        @include media('>phone') {
+            display: block !important;
+            padding-left: 1.5em !important;
+        }
+    }
+
+    &_text input {
+        margin-left: 4px !important;
+        margin-bottom: 10px;
+
+        @include media('>phone') {
+            margin-left: -1.5em !important;
+        }
+    }
+
+    &_text:first-child {
+        border-right: 1px solid #a3a4a5;
+
+        @include media('>phone') {
+            border-right: none;
+        }
+    }
+
+    &_text:last-child {
+        border-left: 1px solid #a3a4a5;
+
+        @include media('>phone') {
+            border-left: none;
+        }
+    }
+
+    &_text > label {
+        margin-top: 2px;
+    }
+
+    &_text > .form-check-input:checked {
+        background-color: #f9a936;
+        border-color: #f9a936;
+
+        @include media('>phone') {
+            background-color: #666666;
+            border-color: #666666;;
+        }
+    }
+
+    &_expData {
+        display: flex;
+        justify-content: space-between;
+        max-width: 120px;
+    }
+    
+
+    &_fightsInputWrapper {
+        margin-top: 38px;
+        opacity: 1;
+        grid-area: fightsInput;;
+    }
+
+    &_fightsInput {
+        -webkit-appearance: none;  /* Override default CSS styles */
+        -moz-appearance: none;
+        appearance: none;
+        width: 106px; /* Full-width */
+        height: 45px; /* Specified height */
+        outline: none; /* Remove outline */
+        background-color: #2a2a2a;
+        background-image: url('../../../public/text-box.png');
+        background-repeat: no-repeat;
+        text-align: right;
+
+        font-size: 29px;
+        font-family: "Arial";
+        color: rgb(162, 155, 112);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+
+    &_fightsInput,
+    &_fightsInput::before,
+    &_fightsInput::after {
+        box-sizing: border-box;
+    }
+
+    &_header {
+        @extend %header-shared;
+    }
+
+    &_expHeader {
+        @extend %header-shared;
+        margin-bottom: 25px;
+    }
+
+    &_complectationHeader {
+        @extend %header-shared;
+        margin-bottom: 25px;
+    }
+
+    &_fightsHeader {
+        @extend %header-shared;
+        margin-bottom: 20px;
+    }
+}
+  

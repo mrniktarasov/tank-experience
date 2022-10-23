@@ -1,0 +1,32 @@
+.tank {
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &_image {
+        cursor: pointer;
+    }
+    
+    &_text {
+        color: white;
+    }
+    
+    &_popoverWrapper {
+        opacity: 1;
+        background-color: #2a2a2a !important;
+        max-width: 500px !important;
+        min-height: 270px !important;
+        border: 2px solid #747474 !important;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+}
+.popover .popover-arrow::before, .popover .popover-arrow::after {
+    top: 0;
+    border-color: transparent !important;
+    border-top-color: #747474 !important;
+    border-bottom-color: #747474 !important;
+}

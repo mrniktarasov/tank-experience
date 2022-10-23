@@ -1,0 +1,23 @@
+@import 'node_modules/include-media/dist/_include-media.scss';
+
+$breakpoints: (
+  phone: 650px, 
+  tablet: 1000px,
+);
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 100px 0;
+
+    @include media('>phone') {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include media('>tablet') {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

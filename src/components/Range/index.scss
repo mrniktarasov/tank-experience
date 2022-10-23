@@ -1,0 +1,77 @@
+.range {
+    &_sliderWrapper {
+        width: 259px; /* Width of the outside container */
+        height: 42px;
+        background-image: url('../../../public/slider-background.png');
+        background-repeat: no-repeat;
+    }
+    
+    /* The slider itself */
+    &_slider {
+        -webkit-appearance: none;  /* Override default CSS styles */
+        border-radius: 1px;
+        appearance: none;
+        width: 219px; /* Full-width */
+        margin-left: 19px;
+        margin-top: 22px;
+        height: 0; /* Specified height */
+        outline: none; /* Remove outline */
+        background-color: #2a2a2a;
+        background: linear-gradient(to right, #ffca01 0%, #ffca01 50%, #2a2a2a 50%, #2a2a2a 100%);
+        outline: none; 
+        transition: background 450ms ease-in;
+        --webkitProgressPercent: 0%;
+    }
+
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+    &_slider::-webkit-slider-thumb {
+        position: relative;
+        -webkit-appearance: none; /* Override default look */
+        -moz-appearance: none;
+        appearance: none;
+        width: 30px; /* Set a specific slider handle width */
+        height: 35px; /* Slider handle height */
+
+        margin-top: -15px;
+
+        background-image: url('../../../public/slider-toggle.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; /* Cursor on hover */ 
+    }
+    &_slider::-webkit-slider-runnable-track {
+        height: 3px;
+        background-image: linear-gradient(
+          90deg,
+          #ffca01 var(--webkitProgressPercent),
+          #1d1d1f var(--webkitProgressPercent)
+        );
+    }
+
+    &_slider::-moz-range-thumb {
+        width: 30px; /* Set a specific slider handle width */
+        height: 35px; /* Slider handle height */
+        margin-top: -15px;
+        margin-top: 2px;
+        background-image: url('../../../public/slider-toggle.png');
+        background-color: transparent;
+        border: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; /* Cursor on hover */
+    }
+
+    &_slider::-moz-range-progress {
+        background-color: #ffca01;
+    }
+    &_slider::-moz-range-track {  
+        background-color: #1c1c1e;
+    }
+ 
+    &_slider::-ms-fill-lower {
+        background-color: #ffca01; 
+    }
+    &_slider::-ms-fill-upper {  
+        background-color: #1c1c1e;
+    }
+}
