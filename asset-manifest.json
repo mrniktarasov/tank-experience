@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tank-experience/static/css/main.786d3394.css",
-    "main.js": "/tank-experience/static/js/main.b1ad1878.js",
+    "main.css": "/tank-experience/static/css/main.06c7ec36.css",
+    "main.js": "/tank-experience/static/js/main.f420a622.js",
     "static/js/787.ed2cca76.chunk.js": "/tank-experience/static/js/787.ed2cca76.chunk.js",
     "static/media/main.png": "/tank-experience/static/media/main.307e01dec19ffc9aa33e.png",
     "index.html": "/tank-experience/index.html",
-    "main.786d3394.css.map": "/tank-experience/static/css/main.786d3394.css.map",
-    "main.b1ad1878.js.map": "/tank-experience/static/js/main.b1ad1878.js.map",
+    "main.06c7ec36.css.map": "/tank-experience/static/css/main.06c7ec36.css.map",
+    "main.f420a622.js.map": "/tank-experience/static/js/main.f420a622.js.map",
     "787.ed2cca76.chunk.js.map": "/tank-experience/static/js/787.ed2cca76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.786d3394.css",
-    "static/js/main.b1ad1878.js"
+    "static/css/main.06c7ec36.css",
+    "static/js/main.f420a622.js"
   ]
 }
