@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/tank-experience/static/css/main.a1db8018.css",
-    "main.js": "/tank-experience/static/js/main.ffc2a39b.js",
+    "main.js": "/tank-experience/static/js/main.fd3dfac7.js",
     "static/js/787.ed2cca76.chunk.js": "/tank-experience/static/js/787.ed2cca76.chunk.js",
     "static/media/main.png": "/tank-experience/static/media/main.307e01dec19ffc9aa33e.png",
     "index.html": "/tank-experience/index.html",
     "main.a1db8018.css.map": "/tank-experience/static/css/main.a1db8018.css.map",
-    "main.ffc2a39b.js.map": "/tank-experience/static/js/main.ffc2a39b.js.map",
+    "main.fd3dfac7.js.map": "/tank-experience/static/js/main.fd3dfac7.js.map",
     "787.ed2cca76.chunk.js.map": "/tank-experience/static/js/787.ed2cca76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1db8018.css",
-    "static/js/main.ffc2a39b.js"
+    "static/js/main.fd3dfac7.js"
   ]
 }
